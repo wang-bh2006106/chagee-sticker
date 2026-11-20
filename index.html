@@ -21,7 +21,7 @@
 <body>
   <h1>🍵 我的专属杯贴</h1>
   <p class="sub">玫瑰刺破掌心 · 循着狐狸走向落日</p>
-  <div class="card"><img id="sticker" src="sticker.png" alt="霸王茶姬杯贴"></div>
+  <div class="card"><img id="sticker" src="__IMG_B64__" alt="霸王茶姬杯贴"></div>
   <div class="actions">
     <button class="primary" onclick="downloadImg()">保存杯贴</button>
     <button class="ghost" onclick="sharePage()">分享给好友</button>
@@ -30,7 +30,7 @@
 <script>
   const src = document.getElementById('sticker').src;
   function downloadImg() {
-    const a=document.createElement('a'); a.href=src; a.download='霸王茶姬杯贴.png'; a.click();
+    const a=document.createElement('a'); a.href=src; a.download='霸王茶姬杯贴.jpg'; a.click();
   }
   function sharePage() {
     if (navigator.share) { navigator.share({title:'我的霸王茶姬杯贴', text:'玫瑰刺破掌心 · 循着狐狸走向落日', url:location.href}).catch(()=>{}); }
